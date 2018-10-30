@@ -1,0 +1,43 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.big {
+  font-size: 25px;
+  color: blue;
+  text-decoration: none;
+}
+
+.big:hover {
+  font-weight: bolder;
+}
+
+.container {
+  text-align: left;
+  width: 50vw;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0px 40px;
+}
+
+.small {
+  font-size: 15px;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-item {
+  align-items: flex-end;
+  min-width: 50vw;
+}
+
+.left {
+  padding-top: 30px;
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: #F0F0F0;
+}

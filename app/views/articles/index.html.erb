@@ -1,0 +1,38 @@
+
+<div class="wrapper">
+<div class="container">
+<div class="flex">
+  <h1 class="flex-item">Articles</h1>
+
+  <div class="left"> <%= link_to "New", new_article_path %></div>
+</div>
+
+  <div class="list">
+
+    <% @articles.each do |a| %>
+    <div class="flex">
+
+      <div class="flex-item">
+        <%= link_to a.title, article_path(a), class: "big" %>
+        <p class="small"><%= a.content %></p>
+      </div>
+
+      <div>
+        <%= link_to "", article_path(a),
+        method: :delete,
+        data: { confirm: "Are you sure?" }, class: "far fa-trash-alt"  %>
+      </div>
+    </div>
+    <% end  %>
+
+
+
+  </div>
+  <div class="flex">
+  <p class="flex-item"><%= link_to "Top", articles_path %></p>
+
+  <div class="left"> <%= link_to "New", new_article_path %></div>
+</div>
+
+</div>
+</div>
